@@ -1,1 +1,5 @@
-print('Olá, mundo!')
+def olamundo(msg):
+    print(msg)
+
+
+olamundo('Ola Mundo!')
