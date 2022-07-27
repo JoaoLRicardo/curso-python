@@ -1,0 +1,4 @@
+import emoji
+
+
+help(emoji)
