@@ -1,5 +1,5 @@
 total = 0
-print('\033[32m{:^40}'.format('\033[32m LOJA GUANABARA '))
+print('\033[32m{:^40}'.format('\033[32m LOJAS GUANABARA '))
 preco = float(input('\033[mPreço das compras: R$'))
 print('''FORMAS DE PAGAMENTO
 [1] à vista dinheiro 
