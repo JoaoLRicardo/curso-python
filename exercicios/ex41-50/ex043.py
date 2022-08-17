@@ -1,61 +1,24 @@
-from random import randint
-from time import sleep
+def escreva(msg):
+    tam = len(msg) + 4
+    print(tam * '=')
+    print(f'  {msg}')
+    print(tam * '=')
 
 
-itens = ['Pedra', 'Papel', 'Tesoura']
-computador = randint(0, 2)
-print('''Suas opções: 
-[0] PEDRA
-[1] PAPEL
-[2] TESOURA
-''')
-
-while True:
-    jogador = input('Qual é a sua jogada? ')
-    if jogador.isdigit():
-        jogador = int(jogador)
-    if jogador == 0 or jogador == 1 or jogador == 2:
-        break
-    else:
-        print()
-        print('Jogada inválida!')
-        print('''Suas opções: 
-[0] PEDRA
-[1] PAPEL
-[2] TESOURA
-''')
-
+escreva('CALCULADORA DE IMC')
 print()
-print('JO')
-sleep(1)
-print('KEN')
-sleep(1)
-print('POO!!!')
+peso = float(input('Qual é o seu peso?(Kg) '))
+altura = float(input('Qual é a sua altura?(m) '))
+imc = peso / (altura ** 2)
 print()
-print('-=' * 14)
-print(f'   Computador jogou {itens[computador]}')
-print(f'   Jogador jogou {itens[jogador]}')
-print('-=' * 14)
-
-if computador == 0:
-    if jogador == 0:
-        print('EMPATE')
-    elif jogador == 1:
-        print('JOGADOR VENCE')
-    elif jogador == 2:
-        print('COMPUTADOR VENCE')
-elif computador == 1:
-    if jogador == 0:
-        print('COMPUTADOR VENCE')
-    elif jogador == 1:
-        print('EMPATE')
-    elif jogador == 2:
-        print('JOGADOR VENCE')
-elif computador == 2:
-    if jogador == 0:
-        print('JOGADOR VENCE')
-    elif jogador == 1:
-        print('COMPUTADOR VENCE')
-    elif jogador == 2:
-        print('EMPATE')
-print('-=' * 14)
+print(f'O IMC dessa pessoa é de {imc:.1f}')
+if imc < 18.5:
+    print('Você está ABAIXO DO PESO normal')
+elif 18.5 <= imc < 25:
+    print('PARABÉNS, você está na faixa de peso NORMAL')
+elif 25 <= imc < 30:
+    print('Você está em SOBREPESO')
+elif 30 <= imc < 40:
+    print('Você está em OBESIDADE, atenção!')
+elif imc >= 40:
+    print('Você está em OBESIDADE MÓRBIDA, cuidado!')
