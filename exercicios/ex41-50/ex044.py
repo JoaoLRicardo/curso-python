@@ -7,7 +7,7 @@ print('''FORMAS DE PAGAMENTO
 [3] parcelado no cartão
 ''')
 while True:
-    menu1 = input('Qual a forma de pagamento? ')
+    menu1 = input('Qual a forma de pagamento? ').strip()
     if menu1.isnumeric():
         menu1 = int(menu1)
     if menu1 == 1 or menu1 == 2 or menu1 == 3:
@@ -31,11 +31,11 @@ elif menu1 == 3:
 [2] até 10x com 5% de juros
 [3] acima de 10x com 15% de juros
     ''')
-        menu2 = input('Qual a forma de pagamento? ')
+        menu2 = input('Qual a forma de pagamento? ').strip()
         if menu2.isnumeric():
             menu2 = int(menu2)
         if menu2 == 1:
-            totparc = input('Quantas parcelas? ')
+            totparc = input('Quantas parcelas? ').strip()
             if totparc.isnumeric():
                 totparc = int(totparc)
                 if totparc == 0:
@@ -56,7 +56,7 @@ elif menu1 == 3:
                 print(f'Sua compra será parcelada em {totparc}x de R${parcela:.2f} com 15% de juros')
                 break
         if menu2 == 2:
-            totparc = input('Quantas parcelas? ')
+            totparc = input('Quantas parcelas? ').strip()
             if totparc.isnumeric():
                 totparc = int(totparc)
             parcela = preco / totparc
@@ -75,7 +75,7 @@ elif menu1 == 3:
                 print(f'Sua compra será parcelada em {totparc}x de R${parcela:.2f} com 15% de juros')
                 break
         if menu2 == 3:
-            totparc = input('Quantas parcelas? ')
+            totparc = input('Quantas parcelas? ').strip()
             if totparc.isnumeric():
                 totparc = int(totparc)
             parcela = preco / totparc
