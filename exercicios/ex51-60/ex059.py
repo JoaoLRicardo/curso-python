@@ -5,14 +5,14 @@ while True:
         n1 = int(n1)
         break
     else:
-        print('Valor inválido!')
+        print('\033[31mValor inválido!\033[m')
 while True:
     n2 = input('Segundo valor: ')
     if n2.isdigit():
         n2 = int(n2)
         break
     else:
-        print('Valor inválido!')
+        print('\033[31mValor inválido!\033[m')
 
 
 while opcao != 5:
@@ -49,23 +49,17 @@ while opcao != 5:
                     n1 = int(n1)
                     break
                 else:
-                    print('Valor inválido!')
+                    print('\033[31mValor inválido!\033[m')
             while True:
                 n2 = input('Segundo valor: ')
                 if n2.isdigit():
                     n2 = int(n2)
                     break
                 else:
-                    print('Valor inválido!')
-                    print('''
-[1] SOMAR
-[2] MULTIPLICAR
-[3] MAIOR
-[4] NOVOS NÚMEROS
-[5] SAIR DO PROGRAMA
-    ''')
+                    print('\033[31mValor inválido!\033[m')
+
         elif opcao == 5:
             print('Finalizando...')        
         else:        
-            print('Opção inválida!')     
+            print('\033[31mOpção inválida!\033[m')     
 print('Volte sempre!')
