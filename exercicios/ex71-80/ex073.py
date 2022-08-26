@@ -6,16 +6,16 @@ def escreva(msg):
 
 
 times = ('Palmeiras', 'Fluminense', 'Flamengo', 'Corinthians', 'Internacional',
-        'Athletico-PR', 'Atlético-MG', 'Santos', 'América-MG', 'Bragantino',
-        'Goiás', 'São Paulo', 'Fortaleza', 'Botafogo', 'Ceará', 'Cuiabá', 
-        'Avaí', 'Coritiba', 'Atlético-GO', 'Juventude')
+         'Athletico-PR', 'Atlético-MG', 'Santos', 'América-MG', 'Bragantino',
+         'Goiás', 'São Paulo', 'Fortaleza', 'Botafogo', 'Ceará', 'Cuiabá',
+         'Avaí', 'Coritiba', 'Atlético-GO', 'Juventude')
 escreva('CLASSIFICAÇÃO BRASILEIRAO SÉRIE A')
 c = 0
 for t in times:
     c += 1
     if c < 5:
         print(f'\033[32m{c}º {t}')
-    if c >= 5 and c <= 15:
+    if 5 <= c <= 15:
         print(f'\033[m{c}º {t}')
     if c > 16:
         print(f'\033[31m{c}º {t}')
