@@ -1,6 +1,3 @@
-from operator import le
-
-
 valores = []
 while True:
     valores.append(int(input('Digite um valor: ')))
