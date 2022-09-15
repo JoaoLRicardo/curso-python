@@ -12,7 +12,7 @@ while True:
         if temp[1] < men:
             men = temp[1]
     princ.append(temp[:])
-    temp.clear
+    temp.clear()
     resp = str(input('Quer continuar? [S/N]')).strip().upper()
     if resp in 'N':
         break
