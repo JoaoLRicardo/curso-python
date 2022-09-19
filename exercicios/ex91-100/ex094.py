@@ -35,4 +35,4 @@ for p in galera:
         for k, v in p.items():
             print(f'{k.title()} = {v}; ', end='')
         print()
-print('<<<ENCERRANDO>>>')
+print('<< ENCERRANDO >>')
