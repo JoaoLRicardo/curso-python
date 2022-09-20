@@ -14,5 +14,5 @@ def leiaint(msg):
 
 
 # PROGRAMA PRINCIPAL
-n = leiaint('Digite um número: ')
-print(f'\033[32mVocê digitou o número {n}\033[m')
+num = leiaint('Digite um número: ')
+print(f'\033[32mVocê digitou o número {num}\033[m')
